@@ -1,3 +1,47 @@
+main {
+  padding-top: 9.6rem;
+}
+
+$homeTitleHeight: 65rem;
+
 #homeTitle {
-  height: 65rem;
+  min-height: $homeTitleHeight;
+  .pageContainer {
+    background: rgba(47, 59, 89, 0.75);
+    height: $homeTitleHeight;
+    position: relative;
+    .straightLine {
+      position: absolute;
+      top: 53.4%;
+    }
+    .smallArrow {
+      position: absolute;
+      top: 53.4%;
+      right: 20%;
+    }
+    .threeSmallCircles {
+      position: absolute;
+      top: 65%;
+      right: 0;
+    }
+    .backgroundImg {
+      position: absolute;
+      z-index: -1;
+      width: 144rem;
+      height: $homeTitleHeight;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      height: $homeTitleHeight;
+      .hOneDiv {
+        max-width: 50rem;
+        p,
+        a {
+          margin: 4rem 0 0 9.5rem;
+          color: white;
+        }
+      }
+    }
+  }
 }
