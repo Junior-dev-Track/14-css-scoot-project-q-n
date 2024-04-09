@@ -1,14 +1,43 @@
 .hOne {
+  font-family: 'Space Mono', monospace;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: white;
 }
 
 .hTwo {
+  font-family: 'Space Mono', monospace;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: $Dark-Navy;
 }
 
 .hThree {
+  font-family: 'Space Mono', monospace;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: $Dark-Navy;
 }
 
 .hFour {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: $Dark-Navy;
 }
 
 .bodyText {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: $Dim-Grey;
 }
