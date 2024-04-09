@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 96px;
+  ul {
+    display: flex;
+    li {
+      margin-right: 34px;
+      img {
+        margin-right: 24px;
+      }
+    }
+  }
+}
