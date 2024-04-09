@@ -1,50 +1,50 @@
 .hOne {
   font-family: 'Space Mono', monospace;
-  font-size: 56px;
+  font-size: 5.6rem;
   font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -2.5px;
+  line-height: 5.6rem;
+  letter-spacing: -0.25rem;
   color: white;
 }
 
 .hTwo {
   font-family: 'Space Mono', monospace;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
-  line-height: 48px;
-  letter-spacing: -2.14px;
+  line-height: 4.8rem;
+  letter-spacing: -0.214rem;
   color: $Dark-Navy;
 }
 
 .hThree {
   font-family: 'Space Mono', monospace;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 48px;
-  letter-spacing: -1.79px;
+  line-height: 4.8rem;
+  letter-spacing: -0.179rem;
   color: $Dark-Navy;
 }
 
 .hFour {
   font-family: 'Space Mono', monospace;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -1.07px;
+  line-height: 2.8rem;
+  letter-spacing: -0.107rem;
   color: $Dark-Navy;
 }
 
 .bodyText {
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 2.5rem;
   color: $Dim-Grey;
 }
 
 .btn {
-  width: 195px;
-  height: 53px;
+  width: 19.5rem;
+  height: 5.3rem;
   background-color: $Yellow;
   display: flex;
   justify-content: center;
@@ -63,5 +63,5 @@
 }
 
 .paddingMain {
-  padding-top: 96px;
+  padding-top: 9.6rem;
 }
