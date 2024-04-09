@@ -13,6 +13,7 @@ $homeTitleHeight: 65rem;
     .straightLine {
       position: absolute;
       top: 53.4%;
+      left: 0;
     }
     .smallArrow {
       position: absolute;
@@ -42,6 +43,81 @@ $homeTitleHeight: 65rem;
           color: white;
         }
       }
+    }
+  }
+}
+
+.howTo {
+  display: flex;
+  justify-content: space-between;
+  margin: 16rem auto;
+  position: relative;
+  hr {
+    position: absolute;
+    width: 974px;
+    border: none;
+    border-top: 15px solid rgba(229, 236, 244, 1);
+    left: -16.5rem;
+    z-index: -1;
+    top: 4rem;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 29.1rem;
+    max-width: 35rem;
+    div {
+      background-color: $Yellow;
+      border-radius: 50%;
+      width: 9.6rem;
+      height: 9.6rem;
+      display: flex;
+      img {
+        padding: 2.5rem;
+        width: 9.6rem;
+      }
+    }
+  }
+}
+
+// TODO positionning
+.homeGrid {
+  display: grid;
+  grid-template:
+    'textOne imageOne'
+    'imageTwo textTwo'
+    'textThree imageThree';
+  row-gap: 16rem;
+
+  #homeGrid__textOne {
+    grid-area: textOne;
+    max-width: 44.5rem;
+  }
+  #homeGrid__imageOne {
+    grid-area: imageOne;
+    img {
+      border-radius: 50%;
+    }
+  }
+  #homeGrid__textTwo {
+    grid-area: textTwo;
+    max-width: 44.5rem;
+  }
+  #homeGrid__imageTwo {
+    grid-area: imageTwo;
+    img {
+      border-radius: 50%;
+    }
+  }
+  #homeGrid__textThree {
+    grid-area: textThree;
+    max-width: 44.5rem;
+  }
+  #homeGrid__imageThree {
+    grid-area: imageThree;
+    img {
+      border-radius: 50%;
     }
   }
 }
