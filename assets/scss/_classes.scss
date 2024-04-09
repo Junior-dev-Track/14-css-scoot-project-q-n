@@ -41,3 +41,13 @@
   line-height: 25px;
   color: $Dim-Grey;
 }
+
+.btn {
+  width: 195px;
+  height: 53px;
+  background-color: $Yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
