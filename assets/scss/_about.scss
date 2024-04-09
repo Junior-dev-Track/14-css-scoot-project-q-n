@@ -1,0 +1,28 @@
+footer {
+  background-color: #495567;
+}
+
+.footerpart2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 96px;
+  nav {
+    display: flex;
+    ul {
+      display: flex;
+      li {
+        margin-left: 34px;
+        img {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+}
+
+.grouplogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
