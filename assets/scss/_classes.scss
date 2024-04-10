@@ -62,6 +62,14 @@
   transition: transform 0.3s ease;
 }
 
-.paddingMain {
-  padding-top: 9.6rem;
+.lightGreyCircle {
+  position: absolute;
+  height: 44.5rem;
+  width: 44.5rem;
+  background-color: $Light-Grey;
+  border-radius: 50%;
+}
+
+.roundImage {
+  border-radius: 50%;
 }

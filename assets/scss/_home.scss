@@ -1,35 +1,38 @@
-$homeTitleHeight: 65rem;
+html {
+  overflow-x: hidden;
+}
+
+.smallArrow,
+.straightLine,
+.bigArrow,
+.threeSmallCircles {
+  position: absolute;
+}
 
 #homeTitle {
+  // BUG image not showing
+  background: url('../images/home/scooter.png');
   .pageContainer {
     background: rgba(47, 59, 89, 0.75);
-    min-height: $homeTitleHeight;
+    max-width: 1000vh;
     position: relative;
-    .straightLine {
-      position: absolute;
-      top: 53.4%;
-      left: 0;
-    }
-    .smallArrow {
-      position: absolute;
-      top: 53.4%;
-      right: 20%;
-    }
     .threeSmallCircles {
-      position: absolute;
       top: 65%;
       right: 0;
-    }
-    .backgroundImg {
-      position: absolute;
-      z-index: -1;
-      min-width: 144rem;
-      height: $homeTitleHeight;
     }
     .container {
       display: flex;
       align-items: center;
-      height: $homeTitleHeight;
+      min-height: 65rem;
+      position: relative;
+      .straightLine {
+        top: 53.4%;
+        left: -15%;
+      }
+      .smallArrow {
+        top: 53.4%;
+        right: 10%;
+      }
       .hOneDiv {
         max-width: 50rem;
         p,
@@ -85,6 +88,10 @@ $homeTitleHeight: 65rem;
     'textThree imageThree';
   row-gap: 16rem;
 
+  .homeGrid-right {
+    float: right;
+  }
+
   #homeGrid__textOne {
     grid-area: textOne;
     max-width: 44.5rem;
@@ -96,16 +103,20 @@ $homeTitleHeight: 65rem;
   }
   #homeGrid__imageOne {
     grid-area: imageOne;
-    img {
-      border-radius: 50%;
-      float: right;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 68%;
+      left: -5%;
+      min-width: 73.5rem;
     }
   }
   #homeGrid__textTwo {
     grid-area: textTwo;
     max-width: 44.5rem;
     min-height: 44.5rem;
-    float: right;
     padding: 6.5rem 0;
     display: flex;
     flex-direction: column;
@@ -113,8 +124,16 @@ $homeTitleHeight: 65rem;
   }
   #homeGrid__imageTwo {
     grid-area: imageTwo;
-    img {
-      border-radius: 50%;
+    position: relative;
+    .lightGreyCircle {
+      left: -90%;
+      top: 0;
+    }
+    .bigArrow {
+      top: 0;
+      right: 67%;
+      transform: scaleX(-1);
+      min-width: 73.5rem;
     }
   }
   #homeGrid__textThree {
@@ -128,9 +147,14 @@ $homeTitleHeight: 65rem;
   }
   #homeGrid__imageThree {
     grid-area: imageThree;
-    img {
-      border-radius: 50%;
-      float: right;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 18%;
+      left: 65%;
+      min-width: 73.5rem;
     }
   }
 }
