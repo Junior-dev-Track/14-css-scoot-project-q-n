@@ -1,0 +1,99 @@
+.smallArrow,
+.straightLine,
+.bigArrow,
+.threeSmallCircles {
+  position: absolute;
+}
+
+.carreers {
+  background-image: url(./assets/images/careers/careersBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .darkBlueBackground {
+    background: rgba(47, 59, 89, 0.75);
+    .container {
+      position: relative;
+      min-height: 20rem;
+      display: flex;
+      align-items: center;
+      .threeSmallCircles {
+        right: -17.5%;
+      }
+    }
+  }
+}
+
+.join {
+  margin: 15rem auto;
+  display: grid;
+  grid-template: 'text image';
+
+  .join-right {
+    float: right;
+  }
+
+  #join__text {
+    grid-area: text;
+    max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #join__image {
+    grid-area: image;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 68%;
+      left: -5%;
+      min-width: 73.5rem;
+    }
+  }
+}
+
+.whyGrid {
+  display: grid;
+  grid-template:
+    'title title title'
+    'article1 article2 article3';
+  min-height: 60.8rem;
+  column-gap: 3rem;
+  text-align: center;
+  margin: 15rem auto;
+
+  article {
+    max-width: 35rem;
+    // min-height: 51.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    img {
+      max-width: 24rem;
+    }
+    h4 {
+      background-color: $Yellow;
+      padding: 3rem;
+      position: absolute;
+      top: 44%;
+    }
+  }
+  h2 {
+    grid-area: title;
+  }
+  .valueOne {
+    grid-area: article1;
+  }
+  .valueTwo {
+    grid-area: article2;
+  }
+  .valueThree {
+    grid-area: article3;
+  }
+}
