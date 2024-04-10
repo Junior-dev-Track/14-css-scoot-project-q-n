@@ -10,8 +10,9 @@ html {
 }
 
 #homeTitle {
-  // BUG image not showing
-  background: url('../images/home/scooter.png');
+  background-image: url('./assets/images/home/scooter.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   .pageContainer {
     background: rgba(47, 59, 89, 0.75);
     max-width: 1000vh;
@@ -53,7 +54,8 @@ html {
   position: relative;
   hr {
     position: absolute;
-    width: 974px;
+    min-width: 97.4rem;
+    //min-width: 65vw;
     border: none;
     border-top: 15px solid rgba(229, 236, 244, 1);
     left: -16.5rem;
@@ -81,7 +83,7 @@ html {
 }
 
 .homeGrid {
-  margin: 10rem auto;
+  margin: 15rem auto;
   display: grid;
   grid-template:
     'textOne imageOne'
