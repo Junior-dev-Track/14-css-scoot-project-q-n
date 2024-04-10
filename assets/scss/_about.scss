@@ -1,3 +1,5 @@
+//FOOTER
+
 .sectionBottom {
   background-color: #495567;
   height: 30rem;
@@ -10,20 +12,29 @@
   }
 }
 
-#circle1 {
-  left: 55%;
-  bottom: 0;
-  position: absolute;
+.media {
+  display: flex;
+  margin-left: auto;
+  width: 100ps;
 }
-#circle2 {
-  position: absolute;
-  bottom: 0;
-  left: 25%;
+.media a i {
+  color: #fcb72c;
+  font-size: 2rem;
+  padding-left: 1rem;
 }
-#circle3 {
-  position: absolute;
-  right: 0;
+
+.store {
+  padding: 5rem;
+  display: flex;
+}
+.store a {
+  padding: 5rem;
+}
+
+#circle {
+  left: 42%;
   bottom: 0;
+  position: absolute;
 }
 
 footer {
@@ -50,27 +61,107 @@ footer {
     }
   }
 }
-.media {
+
+// BANNER
+$aboutTitleHeight: 20rem;
+#aboutTitle {
+  .pageContainer {
+    background: rgba(47, 59, 89, 0.75);
+    min-height: $aboutTitleHeight;
+    position: relative;
+    .threeSmallCircles {
+      position: absolute;
+      top: 30%;
+      right: 0;
+    }
+    .backgroundImg {
+      position: absolute;
+      z-index: -1;
+      min-width: 144rem;
+      height: $aboutTitleHeight;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      height: $aboutTitleHeight;
+      .hOneDiv {
+        max-width: 50rem;
+        p,
+        a {
+          margin: 4rem 0 0 9.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+//SECTION with Articles
+.aboutGrid {
+  margin: 10rem auto;
+  display: grid;
+  grid-template:
+    "textOne imageOne"
+    "imageTwo textTwo";
+  row-gap: 16rem;
+
+  #aboutGrid__textOne {
+    grid-area: textOne;
+    max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #aboutGrid__imageOne {
+    grid-area: imageOne;
+    img {
+      border-radius: 50%;
+      float: right;
+    }
+  }
+  #aboutGrid__textTwo {
+    grid-area: textTwo;
+    max-width: 44.5rem;
+    min-height: 44.5rem;
+    float: right;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #aboutGrid__imageTwo {
+    grid-area: imageTwo;
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+//OUR VALUES
+
+.ourValues {
   display: flex;
-  margin-left: auto;
-  width: 100ps;
-}
-.media a i {
-  color: #fcb72c;
-  font-size: 2rem;
-  padding-left: 1rem;
-}
-
-.store {
-  padding: 5rem;
-  display: flex;
-}
-
-section div a {
-  padding: 5rem;
-  color: white;
-}
-
-.banner {
-  background-color: yellow;
+  justify-content: space-between;
+  margin: 16rem auto;
+  position: relative;
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 29.1rem;
+    max-width: 35rem;
+    text-align: center;
+    img {
+      border-radius: 50%;
+      width: 35 rem;
+      height: 25 rem;
+      display: flex;
+      img {
+        padding: 2.5rem;
+        width: 9.6rem;
+      }
+    }
+  }
 }
