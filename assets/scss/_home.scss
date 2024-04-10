@@ -5,10 +5,9 @@ main {
 $homeTitleHeight: 65rem;
 
 #homeTitle {
-  min-height: $homeTitleHeight;
   .pageContainer {
     background: rgba(47, 59, 89, 0.75);
-    height: $homeTitleHeight;
+    min-height: $homeTitleHeight;
     position: relative;
     .straightLine {
       position: absolute;
@@ -28,7 +27,7 @@ $homeTitleHeight: 65rem;
     .backgroundImg {
       position: absolute;
       z-index: -1;
-      width: 144rem;
+      min-width: 144rem;
       height: $homeTitleHeight;
     }
     .container {
@@ -81,8 +80,8 @@ $homeTitleHeight: 65rem;
   }
 }
 
-// TODO positionning
 .homeGrid {
+  margin: 10rem auto;
   display: grid;
   grid-template:
     'textOne imageOne'
@@ -93,16 +92,28 @@ $homeTitleHeight: 65rem;
   #homeGrid__textOne {
     grid-area: textOne;
     max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #homeGrid__imageOne {
     grid-area: imageOne;
     img {
       border-radius: 50%;
+      float: right;
     }
   }
   #homeGrid__textTwo {
     grid-area: textTwo;
     max-width: 44.5rem;
+    min-height: 44.5rem;
+    float: right;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #homeGrid__imageTwo {
     grid-area: imageTwo;
@@ -113,11 +124,17 @@ $homeTitleHeight: 65rem;
   #homeGrid__textThree {
     grid-area: textThree;
     max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #homeGrid__imageThree {
     grid-area: imageThree;
     img {
       border-radius: 50%;
+      float: right;
     }
   }
 }
