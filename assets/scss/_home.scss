@@ -16,15 +16,16 @@ html {
     background: rgba(47, 59, 89, 0.75);
     max-width: 1000vh;
     position: relative;
-    .threeSmallCircles {
-      top: 65%;
-      right: 0;
-    }
+
     .container {
       display: flex;
       align-items: center;
       min-height: 65rem;
       position: relative;
+      .threeSmallCircles {
+        top: 65%;
+        right: -18%;
+      }
       .straightLine {
         top: 53.4%;
         left: -15%;
