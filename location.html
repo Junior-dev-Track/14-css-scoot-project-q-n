@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Location</title>
+    <link rel="stylesheet" href="style-location.scss" />
   </head>
   <body>
         <!-- HEADER  -->
@@ -25,10 +26,10 @@
       
           <main>
             <!-- BANNER -->
-            <section class="aboutBanner">
+            <section class="locationsBanner">
               <div class="darkBackground">
                 <div class="container">
-                  <h1 class="hOne">About</h1>
+                  <h1 class="hOne">Locations</h1>
                   <img
                     class="threeCircles"
                     src="./assets/images/shapes/threeSmallCircles.svg"
@@ -37,12 +38,28 @@
                 </div>
               </div>
             </section>
-    <img src="assets/images/locations/map.svg" alt="" />
-    <h2 class="hTow">Your city not listed?</h2>
-    <p class="bodyText">
-      If you’d like to see Scoot in your hometown, be sure to let us know. We
-      track requests and plan launches based on demand. Feel free to message us
-      by clicking the link or messaging us on social.
-    </p>
+             <!-- MAP -->
+             <section class="mapContainer">
+              <img src="assets/images/locations/map.svg" alt="map of the world" />
+              <p class="places">New York</p>
+              <p class="places">London</p>
+              <p class="places">Yokohama</p>
+              <p class="places">Jakarta</p>
+             </section>
+             
+    
+    <!-- TEXT SECTION -->
+    <section class="container findCity">
+      <h2 class="hTwo">Your city not listed?</h2>
+      <p class="bodyText">
+        If you’d like to see Scoot in your hometown, be sure to let us know. We
+        track requests and plan launches based on demand. Feel free to message us
+        by clicking the link or messaging us on social.
+      </p>
+      <a class="btn bodyText" href="#">Message Us</a>
+       
+    </section>
+    
+     <!-- FOOTER -->
   </body>
 </html>
