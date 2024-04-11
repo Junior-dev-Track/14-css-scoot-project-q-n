@@ -68,21 +68,26 @@ footer {
   background-image: url(./assets/images/about/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  .darkBlueBackground {
+  .darkBackground {
     background: rgba(47, 59, 89, 0.75);
     .container {
       position: relative;
       min-height: 20rem;
       display: flex;
       align-items: center;
-      .threeSmallCircles {
+      .threeCircles {
         right: -17.5%;
+        position: absolute;
       }
     }
   }
 }
+.threeSmallCircles {
+  right: -17.5%;
+}
 
 //SECTION with Articles
+
 .aboutGrid {
   margin: 10rem auto;
   display: grid;
@@ -90,6 +95,10 @@ footer {
     "textOne imageOne"
     "imageTwo textTwo";
   row-gap: 16rem;
+
+  .aboutGrid-right {
+    float: right;
+  }
 
   #aboutGrid__textOne {
     grid-area: textOne;
@@ -102,16 +111,21 @@ footer {
   }
   #aboutGrid__imageOne {
     grid-area: imageOne;
-    img {
-      border-radius: 50%;
-      float: right;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+      position: absolute;
+    }
+    .bigArrow {
+      top: 68%;
+      left: -5%;
+      min-width: 73.5rem;
     }
   }
   #aboutGrid__textTwo {
     grid-area: textTwo;
     max-width: 44.5rem;
     min-height: 44.5rem;
-    float: right;
     padding: 6.5rem 0;
     display: flex;
     flex-direction: column;
@@ -119,8 +133,16 @@ footer {
   }
   #aboutGrid__imageTwo {
     grid-area: imageTwo;
-    img {
-      border-radius: 50%;
+    position: relative;
+    .lightGreyCircle {
+      left: -90%;
+      top: 0;
+    }
+    .smallArrow {
+      top: 0;
+      right: 67%;
+      transform: scaleX(-1);
+      min-width: 73.5rem;
     }
   }
 }
