@@ -88,97 +88,38 @@ footer {
 
 //SECTION with Articles
 
-// .aboutGrid {
-//   margin: 10rem auto;
-//   display: grid;
-//   grid-template:
-//     "textOne imageOne"
-//     "imageTwo textTwo";
-//   row-gap: 16rem;
-
-//   .aboutGrid-right {
-//     float: right;
-//   }
-
-//   #aboutGrid__textOne {
-//     grid-area: textOne;
-//     max-width: 44.5rem;
-//     min-height: 44.5rem;
-//     padding: 6.5rem 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//   }
-//   #aboutGrid__imageOne {
-//     grid-area: imageOne;
-//     position: relative;
-//     .lightGreyCircle {
-//       right: -90%;
-//       position: absolute;
-//     }
-//     .bigArrow {
-//       top: 68%;
-//       left: -5%;
-//       min-width: 73.5rem;
-//     }
-//   }
-//   #aboutGrid__textTwo {
-//     grid-area: textTwo;
-//     max-width: 44.5rem;
-//     min-height: 44.5rem;
-//     padding: 6.5rem 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//   }
-//   #aboutGrid__imageTwo {
-//     grid-area: imageTwo;
-//     position: relative;
-//     .lightGreyCircle {
-//       left: -90%;
-//       top: 0;
-//     }
-//     .smallArrow {
-//       top: 0;
-//       right: 67%;
-//       transform: scaleX(-1);
-//       min-width: 73.5rem;
-//     }
-//   }
-// }
-
 .bigArrow,
 .threeSmallCircles {
   position: absolute;
 }
 
-.homeGrid {
-  margin-bottom: 15rem;
+.aboutGrid {
+  margin: 15rem auto;
   display: grid;
   grid-template:
-    'textOne imageOne'
-    'imageTwo textTwo';
+    "textOne imageOne"
+    "imageTwo textTwo";
   row-gap: 16rem;
 
-  .homeGrid-right {
+  .aboutGrid-right {
     float: right;
   }
-
-  #homeGrid__textThree,
-  #homeGrid__textTwo,
-  #homeGrid__textOne {
+  #aboutGrid__textTwo,
+  #aboutGrid__textOne {
     max-width: 44.5rem;
     min-height: 44.5rem;
     padding: 6.5rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
-  #homeGrid__textOne {
+  #aboutGrid__textOne {
     grid-area: textOne;
+    padding: 6.5rem 0;
   }
-  #homeGrid__imageOne {
+
+  #aboutGrid__imageOne {
     grid-area: imageOne;
     position: relative;
     .lightGreyCircle {
@@ -191,10 +132,10 @@ footer {
       transform: scaleY(-1);
     }
   }
-  #homeGrid__textTwo {
+  #aboutGrid__textTwo {
     grid-area: textTwo;
   }
-  #homeGrid__imageTwo {
+  #aboutGrid__imageTwo {
     grid-area: imageTwo;
     position: relative;
     .lightGreyCircle {
@@ -215,8 +156,8 @@ footer {
 .valuesGrid {
   display: grid;
   grid-template:
-    'title title title'
-    'article1 article2 article3';
+    "title title title"
+    "article1 article2 article3";
   min-height: 60.8rem;
   column-gap: 3rem;
   text-align: center;
@@ -259,9 +200,9 @@ footer {
 .faqGrid {
   display: grid;
   grid-template:
-    'title title'
-    'article1 article2'
-    'article3 article4';
+    "title title"
+    "article1 article2"
+    "article3 article4";
   column-gap: 33rem;
   margin: 15rem auto;
   min-height: 60.8rem;
