@@ -97,3 +97,19 @@
     grid-area: article3;
   }
 }
+
+.applyCareers {
+  margin-bottom: 10rem;
+  article {
+    min-height: 12.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: $Snow;
+    margin-bottom: 2.4rem;
+    h4 {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
