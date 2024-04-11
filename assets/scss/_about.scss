@@ -240,9 +240,9 @@ footer {
   outline: none;
   font-size: 1.5rem;
   transition: 0.4s;
-  padding: 1.5rem 2rem;
   margin-bottom: 2.5rem;
 }
+
 .accordion:hover {
   background-color: $Light-Yellow;
 }
@@ -250,10 +250,37 @@ footer {
   background-color: $Snow;
   margin-bottom: 0;
 }
+
+.accordion:after {
+  content: "";
+  color: transparent;
+  border: solid $Yellow;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "";
+  color: transparent;
+  border: solid $Yellow;
+  border-width: 0 0 2px 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  float: right;
+  margin-left: 5px;
+}
+
 .panel {
+  text-align: left;
   padding: 0 1.8rem;
-  display: none;
-  overflow: hidden;
   background-color: $Snow;
+  max-height: 0;
+  overflow: hidden;
   margin-bottom: 1.5rem;
+  transition: max-height 0.2s ease-out;
 }
