@@ -54,9 +54,19 @@ footer {
       display: flex;
       li {
         margin-right: 3.4rem;
+        a:hover {
+          color: $Yellow;
+        }
         img {
           margin-right: 2.4rem;
           align-self: flex-end;
+        }
+      }
+    }
+    .media {
+      a {
+        i:hover {
+          color: $Light-Grey;
         }
       }
     }
