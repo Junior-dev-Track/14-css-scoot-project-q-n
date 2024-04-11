@@ -64,34 +64,19 @@ footer {
 }
 
 // BANNER
-$aboutTitleHeight: 20rem;
-#aboutTitle {
-  .pageContainer {
+.aboutBanner {
+  background-image: url(./assets/images/about/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .darkBlueBackground {
     background: rgba(47, 59, 89, 0.75);
-    min-height: $aboutTitleHeight;
-    position: relative;
-    .threeSmallCircles {
-      position: absolute;
-      top: 30%;
-      right: -2%;
-    }
-    .backgroundImg {
-      position: absolute;
-      z-index: -1;
-      min-width: 144rem;
-      height: $aboutTitleHeight;
-    }
     .container {
+      position: relative;
+      min-height: 20rem;
       display: flex;
       align-items: center;
-      height: $aboutTitleHeight;
-      .hOneDiv {
-        max-width: 50rem;
-        p,
-        a {
-          margin: 4rem 0 0 9.5rem;
-          color: white;
-        }
+      .threeSmallCircles {
+        right: -17.5%;
       }
     }
   }
@@ -231,18 +216,18 @@ $aboutTitleHeight: 20rem;
   transition: 0.4s;
   padding: 1.5rem 2rem;
   margin-bottom: 2.5rem;
-  .accordion:hover {
-    background-color: $Light-Yellow;
-  }
-  .active {
-    background-color: $Snow;
-    margin-bottom: 0;
-  }
-  .panel {
-    padding: 0 1.8rem;
-    display: none;
-    overflow: hidden;
-    background-color: $Snow;
-    margin-bottom: 1.5rem;
-  }
+}
+.accordion:hover {
+  background-color: $Light-Yellow;
+}
+.active {
+  background-color: $Snow;
+  margin-bottom: 0;
+}
+.panel {
+  padding: 0 1.8rem;
+  display: none;
+  overflow: hidden;
+  background-color: $Snow;
+  margin-bottom: 1.5rem;
 }
