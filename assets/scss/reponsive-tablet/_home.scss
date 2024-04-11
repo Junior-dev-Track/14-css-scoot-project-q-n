@@ -1,0 +1,56 @@
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  #homeTitle {
+    text-align: center;
+    .pageContainer {
+      .container {
+        display: flex;
+        justify-content: center;
+        min-height: 65rem;
+        position: relative;
+        .threeSmallCircles {
+          top: 84%;
+          right: -10%;
+        }
+        .straightLine {
+          display: none;
+        }
+        .smallArrow {
+          top: 72%;
+          left: -26%;
+        }
+        .hOneDiv {
+          max-width: 57.3rem;
+          margin-bottom: 10rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          p,
+          a {
+            margin: 4rem 0 0 0;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .howTo {
+    flex-direction: column;
+    align-items: center;
+    hr {
+      transform: rotate(90deg);
+      left: -57.5%;
+    }
+    article {
+      flex-direction: row;
+      max-width: 57.3rem;
+      min-height: 13rem;
+      gap: 7.9rem;
+      .howTo__Text {
+        max-width: 39.8rem;
+      }
+      .howTo__iconsHow {
+      }
+    }
+  }
+}

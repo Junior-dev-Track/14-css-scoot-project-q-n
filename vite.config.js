@@ -10,7 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         nested: resolve(__dirname, 'about.html'),
-        third: resolve(__dirname, 'carreers.html'),
+        third: resolve(__dirname, 'careers.html'),
         // fourth: resolve(__dirname, 'fourth.html'),
       },
     },
