@@ -1,6 +1,6 @@
 // BANNER
 .locationsBanner {
-  background-image: url(./assets/images/locations/banner4.png);
+  background-image: url(./assets/images/location/banner4.png);
   background-repeat: no-repeat;
   background-size: cover;
   .darkBackground {
@@ -27,10 +27,6 @@
   max-width: 111rem;
   margin: 10rem auto;
   position: relative;
-}
-.mapContainer img {
-  //filter: brightness(100%) sepia(20%);
-  filter: grayscale(100%);
 }
 
 .places {
