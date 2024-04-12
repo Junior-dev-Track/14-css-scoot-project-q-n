@@ -1,5 +1,5 @@
 // BANNER
-.locationsBanner {
+.locationBanner {
   background-image: url(./assets/images/location/banner4.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,6 +86,8 @@
   }
   button {
     grid-area: button;
-    justify-self: end;
   }
+}
+.findCity a {
+  margin-left: 6rem;
 }
