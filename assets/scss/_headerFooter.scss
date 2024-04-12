@@ -7,6 +7,9 @@ header {
   position: fixed;
   min-width: 100%;
   z-index: 999;
+  .header__hamburgerList {
+    display: none;
+  }
   nav {
     .header__hamburger {
       display: none;
@@ -36,10 +39,50 @@ header {
   }
 
   header {
+    .header__hamburgerList {
+      position: absolute;
+      top: 6.4rem;
+      height: calc(100vh - 6.4rem);
+      width: calc(100% - 25.6rem);
+      right: 0;
+      display: inline-block;
+      background-color: #000000c0;
+    }
+    .header__hamburgerList-visible {
+      position: absolute;
+      top: 6.4rem;
+      width: 25.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #333a44;
+      height: calc(100vh - 6.4rem);
+      padding: 6.4rem 0 2.4rem 3.2rem;
+      li {
+        transition: transform 0.2s ease-in-out;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2.4rem;
+          li {
+            max-width: fit-content;
+            a {
+              color: $Light-Grey;
+              &:hover {
+                color: $Yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+
     nav {
       min-height: 6.4rem;
       justify-content: center;
       .header__hamburger {
+        border: none;
+        background: transparent;
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
@@ -66,8 +109,41 @@ header {
         }
       }
     }
-    .btn {
+    .btnHeader {
       display: none;
     }
+  }
+}
+
+.header__hamburgerList-hidden {
+  .header__hamburgerList {
+    transform: translate(-100vh);
+  }
+  .header__hamburgerList-visible {
+    transform: translate(-25.6rem);
+    li {
+      transform: translate(-25.6rem);
+    }
+  }
+}
+
+.header__hamburgerList-fixed {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.header__hamburger-cross {
+  position: relative;
+  div:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  div:nth-child(2) {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  div:nth-child(3) {
+    display: none;
   }
 }

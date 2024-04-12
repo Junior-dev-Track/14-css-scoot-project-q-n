@@ -7,13 +7,32 @@
     <title>Scoot - Home</title>
   </head>
   <body>
-    <header class="header-visible">
+    <header class="header-visible header__hamburgerList-hidden">
+      <div class="header__hamburgerList"></div>
+      <ul class="header__hamburgerList-visible">
+        <li>
+          <ul>
+            <li>
+              <a class="bodyText" href="./about.html">About</a>
+            </li>
+            <li>
+              <a class="bodyText" href="./location.html">Location</a>
+            </li>
+            <li>
+              <a class="bodyText" href="./careers.html">Careers</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="btn bodyText" href="#">Get Scootin</a>
+        </li>
+      </ul>
       <nav class="container">
-        <a href="#" class="header__hamburger">
+        <button class="header__hamburger">
           <div></div>
           <div></div>
           <div></div>
-        </a>
+        </button>
         <ul>
           <li>
             <a href="./index.html"
@@ -21,16 +40,16 @@
             /></a>
           </li>
           <li>
-            <a class="bodyText" href="./about.html"> <p>About</p></a>
+            <a class="bodyText" href="./about.html"><p>About</p></a>
           </li>
           <li>
-            <a class="bodyText" href="#"><p>Location</p></a>
+            <a class="bodyText" href="./location.html"><p>Location</p></a>
           </li>
           <li>
             <a class="bodyText" href="./careers.html"><p>Careers</p></a>
           </li>
         </ul>
-        <a class="btn bodyText" href="#">Get Scootin</a>
+        <a class="btn bodyText btnHeader" href="#">Get Scootin</a>
       </nav>
     </header>
     <main>

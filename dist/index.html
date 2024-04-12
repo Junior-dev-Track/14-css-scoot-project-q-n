@@ -4,22 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scoot - Home</title>
-    <link rel="stylesheet" crossorigin href="/assets/main-CfBII6vz.css">
+    <script type="module" crossorigin src="/assets/main-C2mBRJYN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-DV0NccBZ.css">
   </head>
   <body>
-    <header class="header-visible">
+    <header class="header-visible header__hamburgerList-hidden">
+      <div class="header__hamburgerList">
+        <ul class="header__hamburgerList-visible">
+          <li>
+            <ul>
+              <li>
+                <a class="bodyText" href="./about.html">About</a>
+              </li>
+              <li>
+                <a class="bodyText" href="./location.html">Location</a>
+              </li>
+              <li>
+                <a class="bodyText" href="./careers.html">Careers</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn bodyText" href="#">Get Scootin</a>
+          </li>
+        </ul>
+      </div>
       <nav class="container">
+        <button class="header__hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
         <ul>
           <li>
             <a href="./index.html"
               ><img src="/assets/scootDark-D3OS3h98.svg" alt="logo"
             /></a>
           </li>
-          <li><a class="bodyText" href="./about.html">About</a></li>
-          <li><a class="bodyText" href="#">Location</a></li>
-          <li><a class="bodyText" href="./carreers.html">Careers</a></li>
+          <li>
+            <a class="bodyText" href="./about.html"><p>About</p></a>
+          </li>
+          <li>
+            <a class="bodyText" href="./location.html"><p>Location</p></a>
+          </li>
+          <li>
+            <a class="bodyText" href="./careers.html"><p>Careers</p></a>
+          </li>
         </ul>
-        <a class="btn bodyText" href="#">Get Scootin</a>
+        <a class="btn bodyText btnHeader" href="#">Get Scootin</a>
       </nav>
     </header>
     <main>
@@ -54,43 +86,67 @@
           </div>
         </div>
       </section>
-      <section class="container howTo">
-        <hr />
-        <article>
-          <div>
-            <img src="/assets/phoneIcon-DgEX64fd.svg" alt="phoneIcon" />
-          </div>
-          <h4 class="hFour">Locate with app</h4>
-          <p class="bodyText">
-            Use the app to find the nearest scooter to you. We are continuously
-            placing scooters in the areas with most demand, so one should never
-            be too far away.
-          </p>
-        </article>
-        <article>
-          <div>
-            <img src="/assets/scooterIcon-Dr4o2uQt.svg" alt="scooterIcon" />
-          </div>
-          <h4 class="hFour">Pick your scooter</h4>
-          <p class="bodyText">
-            We show the most important info for the scooters closest to you. So
-            you know how much charge they have left and can see roughly how much
-            it will cost.
-          </p>
-        </article>
-        <article>
-          <div>
-            <img src="/assets/speedIcon-DBP9DoNS.svg" alt="speedIcon" />
-          </div>
-          <h4 class="hFour">Enjoy the ride</h4>
-          <p class="bodyText">
-            Scan the QR code and the bike will unlock. Retract the cable lock,
-            put on a helmet, and you’re off! Always lock bikes away from
-            walkways and accessibility ramps.
-          </p>
-        </article>
+      <section class="howTo">
+        <div class="container">
+          <hr class="infiniteLine" />
+          <article>
+            <div class="howTo__iconsHow">
+              <img src="/assets/phoneIcon-DgEX64fd.svg" alt="phoneIcon" />
+            </div>
+            <div class="howTo__Text">
+              <h4 class="hFour">Locate with app</h4>
+              <p class="bodyText">
+                Use the app to find the nearest scooter to you. We are
+                continuously placing scooters in the areas with most demand, so
+                one should never be too far away.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="howTo__iconsHow">
+              <img
+                src="/assets/scooterIcon-Dr4o2uQt.svg"
+                alt="scooterIcon"
+              />
+            </div>
+            <div class="howTo__Text">
+              <h4 class="hFour">Pick your scooter</h4>
+              <p class="bodyText">
+                We show the most important info for the scooters closest to you.
+                So you know how much charge they have left and can see roughly
+                how much it will cost.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="howTo__iconsHow">
+              <img src="/assets/speedIcon-DBP9DoNS.svg" alt="speedIcon" />
+            </div>
+            <div class="howTo__Text">
+              <h4 class="hFour">Enjoy the ride</h4>
+              <p class="bodyText">
+                Scan the QR code and the bike will unlock. Retract the cable
+                lock, put on a helmet, and you’re off! Always lock bikes away
+                from walkways and accessibility ramps.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="homeGrid container">
+        <div id="homeGrid__imageOne">
+          <img
+            class="homeGrid-right roundImage"
+            src="/assets/girlPhone-Zv7vU8Kb.png"
+            alt="girlPhone"
+          />
+          <div class="lightGreyCircle"></div>
+          <img
+            class="bigArrow"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='741'%20height='151'%3e%3cg%20fill='none'%20fill-rule='evenodd'%20stroke='%23FCB72B'%20stroke-linejoin='bevel'%20stroke-width='15'%3e%3cpath%20d='M740.969%208H182.854v99.369H6.591'/%3e%3cpath%20d='M44.64%20145.64L6.214%20107.214%2044.64%2068.787'/%3e%3c/g%3e%3c/svg%3e"
+            alt="bigArrow"
+          />
+        </div>
         <div>
           <article id="homeGrid__textOne">
             <h2 class="hTwo">Easy to use riding telemetry</h2>
@@ -103,11 +159,11 @@
             <a class="btn bodyText" href="#">Learn More</a>
           </article>
         </div>
-        <div id="homeGrid__imageOne">
+        <div id="homeGrid__imageTwo">
           <img
-            class="homeGrid-right roundImage"
-            src="/assets/girlPhone-Zv7vU8Kb.png"
-            alt="girlPhone"
+            class="roundImage"
+            src="/assets/city-uU0kwLPd.png"
+            alt="city"
           />
           <div class="lightGreyCircle"></div>
           <img
@@ -128,11 +184,11 @@
             <a class="btn bodyText" href="#">Learn More</a>
           </article>
         </div>
-        <div id="homeGrid__imageTwo">
+        <div id="homeGrid__imageThree">
           <img
-            class="roundImage"
-            src="/assets/city-uU0kwLPd.png"
-            alt="city"
+            class="homeGrid-right roundImage"
+            src="/assets/wallet-DRrqVbcu.png"
+            alt="wallet"
           />
           <div class="lightGreyCircle"></div>
           <img
@@ -153,21 +209,7 @@
             <a class="btn bodyText" href="#">Learn More</a>
           </article>
         </div>
-        <div id="homeGrid__imageThree">
-          <img
-            class="homeGrid-right roundImage"
-            src="/assets/wallet-DRrqVbcu.png"
-            alt="wallet"
-          />
-          <div class="lightGreyCircle"></div>
-          <img
-            class="bigArrow"
-            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='741'%20height='151'%3e%3cg%20fill='none'%20fill-rule='evenodd'%20stroke='%23FCB72B'%20stroke-linejoin='bevel'%20stroke-width='15'%3e%3cpath%20d='M740.969%208H182.854v99.369H6.591'/%3e%3cpath%20d='M44.64%20145.64L6.214%20107.214%2044.64%2068.787'/%3e%3c/g%3e%3c/svg%3e"
-            alt="bigArrow"
-          />
-        </div>
       </section>
     </main>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
