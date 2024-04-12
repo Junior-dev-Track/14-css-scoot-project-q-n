@@ -84,7 +84,7 @@ html {
     }
     h4 {
       background-color: $Yellow;
-      padding: 3rem;
+      padding: 3.4rem 3.44rem;
       position: absolute;
       top: 44%;
     }
@@ -115,6 +115,10 @@ html {
     margin-bottom: 2.4rem;
     h4 {
       margin-bottom: 0.8rem;
+    }
+    p {
+      font-weight: 400;
+      color: $Dark-Navy;
     }
   }
 }
