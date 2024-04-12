@@ -1,9 +1,10 @@
 //FOOTER
 
 .sectionBottom {
-  background-color: #495567;
+  background-color: $Dark-Navy;
   height: 30rem;
   position: relative;
+  overflow: hidden;
   .bottom {
     display: flex;
     justify-content: space-between;
@@ -32,17 +33,17 @@
 }
 
 #circle {
-  left: 42%;
-  bottom: 0;
+  left: 30%;
+  bottom: -20rem;
   position: absolute;
 }
 
 footer {
-  background-color: #333a44;
+  background-color: hsla(215, 14%, 23%, 1);
   left: 0;
   bottom: 0;
   min-width: 100%;
-  height: 96px;
+  height: 9.6rem;
   margin-top: auto;
   nav {
     display: flex;
@@ -53,9 +54,19 @@ footer {
       display: flex;
       li {
         margin-right: 3.4rem;
+        a:hover {
+          color: $Yellow;
+        }
         img {
           margin-right: 2.4rem;
           align-self: flex-end;
+        }
+      }
+    }
+    .media {
+      a {
+        i:hover {
+          color: $Light-Grey;
         }
       }
     }
@@ -63,105 +74,223 @@ footer {
 }
 
 // BANNER
-$aboutTitleHeight: 20rem;
-#aboutTitle {
-  .pageContainer {
+.aboutBanner {
+  background-image: url(./assets/images/about/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .darkBackground {
     background: rgba(47, 59, 89, 0.75);
-    min-height: $aboutTitleHeight;
-    position: relative;
-    .threeSmallCircles {
-      position: absolute;
-      top: 30%;
-      right: 0;
-    }
-    .backgroundImg {
-      position: absolute;
-      z-index: -1;
-      min-width: 144rem;
-      height: $aboutTitleHeight;
-    }
     .container {
+      position: relative;
+      min-height: 20rem;
       display: flex;
       align-items: center;
-      height: $aboutTitleHeight;
-      .hOneDiv {
-        max-width: 50rem;
-        p,
-        a {
-          margin: 4rem 0 0 9.5rem;
-          color: white;
-        }
+      .threeCircles {
+        right: -17.5%;
+        position: absolute;
       }
     }
   }
 }
+.threeSmallCircles {
+  right: -17.5%;
+}
 
 //SECTION with Articles
+
+.bigArrow,
+.threeSmallCircles {
+  position: absolute;
+}
+
 .aboutGrid {
-  margin: 10rem auto;
+  margin: 15rem auto;
   display: grid;
   grid-template:
     "textOne imageOne"
     "imageTwo textTwo";
   row-gap: 16rem;
 
+  .aboutGrid-right {
+    float: right;
+  }
+  #aboutGrid__textTwo,
   #aboutGrid__textOne {
-    grid-area: textOne;
     max-width: 44.5rem;
     min-height: 44.5rem;
     padding: 6.5rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
+
+  #aboutGrid__textOne {
+    grid-area: textOne;
+    padding: 6.5rem 0;
+  }
+
   #aboutGrid__imageOne {
     grid-area: imageOne;
-    img {
-      border-radius: 50%;
-      float: right;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 60%;
+      left: -2%;
+      min-width: 73.5rem;
+      transform: scaleY(-1);
     }
   }
   #aboutGrid__textTwo {
     grid-area: textTwo;
-    max-width: 44.5rem;
-    min-height: 44.5rem;
-    float: right;
-    padding: 6.5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   #aboutGrid__imageTwo {
     grid-area: imageTwo;
-    img {
-      border-radius: 50%;
+    position: relative;
+    .lightGreyCircle {
+      left: -90%;
+      top: 0;
+    }
+    .bigArrow {
+      top: 0;
+      right: 67%;
+      transform: scaleX(-1);
+      min-width: 73.5rem;
     }
   }
 }
 
 //OUR VALUES
 
-.ourValues {
-  display: flex;
-  justify-content: space-between;
-  margin: 16rem auto;
-  position: relative;
+.valuesGrid {
+  display: grid;
+  grid-template:
+    "title title title"
+    "article1 article2 article3";
+  min-height: 60.8rem;
+  column-gap: 3rem;
+  text-align: center;
+  margin: 15rem auto;
+
   article {
+    max-width: 35rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    min-height: 29.1rem;
-    max-width: 35rem;
-    text-align: center;
+    position: relative;
+
     img {
-      border-radius: 50%;
-      width: 35 rem;
-      height: 25 rem;
-      display: flex;
-      img {
-        padding: 2.5rem;
-        width: 9.6rem;
-      }
+      max-width: 24rem;
+    }
+    h4 {
+      background-color: $Yellow;
+      padding: 3rem;
+      position: absolute;
+      top: 44%;
     }
   }
+  h2 {
+    grid-area: title;
+  }
+  .valueOne {
+    grid-area: article1;
+  }
+  .valueTwo {
+    grid-area: article2;
+  }
+  .valueThree {
+    grid-area: article3;
+  }
+}
+
+//FAQ SECTION
+
+.faqGrid {
+  display: grid;
+  grid-template:
+    "title title"
+    "article1 article2"
+    "article3 article4";
+  column-gap: 33rem;
+  margin: 15rem auto;
+  min-height: 60.8rem;
+  text-align: center;
+  h2 {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+  .howItWorks {
+    grid-area: article1;
+  }
+  .howItWorksA {
+    grid-area: article2;
+    max-width: 73rem;
+  }
+  .safeDiving {
+    grid-area: article3;
+  }
+  .safeDrivingA {
+    grid-area: article4;
+    max-width: 73rem;
+  }
+}
+
+// Accordion
+
+.accordion {
+  background-color: $Snow;
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+  transition: 0.4s;
+  margin-bottom: 2.5rem;
+}
+
+.accordion:hover {
+  background-color: $Light-Yellow;
+}
+.active {
+  background-color: $Snow;
+  margin-bottom: 0;
+}
+
+.accordion:after {
+  content: "";
+  color: transparent;
+  border: solid $Yellow;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "";
+  color: transparent;
+  border: solid $Yellow;
+  border-width: 0 0 2px 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  text-align: left;
+  padding: 0 1.8rem;
+  background-color: $Snow;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: max-height 0.2s ease-out;
 }

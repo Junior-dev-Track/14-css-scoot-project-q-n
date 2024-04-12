@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 .smallArrow,
 .straightLine,
 .bigArrow,
@@ -5,7 +9,7 @@
   position: absolute;
 }
 
-.carreers {
+.careers {
   background-image: url(./assets/images/careers/careersBanner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,22 +64,23 @@
   grid-template:
     'title title title'
     'article1 article2 article3';
-  min-height: 60.8rem;
+  gap: 10.3rem;
   column-gap: 3rem;
   text-align: center;
   margin: 15rem auto;
 
   article {
     max-width: 35rem;
-    // min-height: 51.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: relative;
+    gap: 2.7rem;
 
     img {
       max-width: 24rem;
+      margin-bottom: 6rem;
     }
     h4 {
       background-color: $Yellow;
@@ -95,5 +100,21 @@
   }
   .valueThree {
     grid-area: article3;
+  }
+}
+
+.applyCareers {
+  margin-bottom: 10rem;
+  article {
+    min-height: 12.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: $Snow;
+    margin-bottom: 2.4rem;
+    h4 {
+      margin-bottom: 0.8rem;
+    }
   }
 }

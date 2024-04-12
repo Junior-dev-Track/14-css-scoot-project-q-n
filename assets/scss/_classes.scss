@@ -34,6 +34,25 @@
   color: $Dark-Navy;
 }
 
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .hOne {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.18rem;
+  }
+
+  .hTwo {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.14rem;
+  }
+
+  .hFour {
+    font-size: 2rem;
+    letter-spacing: -0.09rem;
+  }
+}
+
 .bodyText {
   font-family: 'Lexend Deca', sans-serif;
   font-size: 1.5rem;
@@ -50,6 +69,11 @@
   justify-content: center;
   align-items: center;
   color: white;
+  &:hover {
+    background-color: transparent;
+    border: 3px solid $Yellow;
+    color: $Yellow;
+  }
 }
 
 .header-hidden {
@@ -72,4 +96,10 @@
 
 .roundImage {
   border-radius: 50%;
+}
+
+.infiniteLine {
+  border: none;
+  border-top: 15px solid rgba(229, 236, 244, 1);
+  min-width: 45%;
 }
