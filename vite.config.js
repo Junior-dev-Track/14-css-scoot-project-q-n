@@ -14,5 +14,6 @@ export default defineConfig({
         fourth: resolve(__dirname, 'location.html'),
       },
     },
+    cssCodeSplit: false,
   },
 });
