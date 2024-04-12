@@ -8,6 +8,9 @@ header {
   min-width: 100%;
   z-index: 999;
   nav {
+    .header__hamburger {
+      display: none;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +30,27 @@ header {
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  main {
+    padding-top: 6.4rem;
+  }
+
   header {
     nav {
+      min-height: 6.4rem;
       justify-content: center;
+      .header__hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        position: absolute;
+        left: 8%;
+        div {
+          height: 0.369rem;
+          width: 1.969rem;
+          background-color: $Yellow;
+        }
+      }
       ul {
         li {
           margin-right: 0;
@@ -40,6 +60,7 @@ header {
             }
             img {
               margin: 0;
+              max-width: 7.55rem;
             }
           }
         }
