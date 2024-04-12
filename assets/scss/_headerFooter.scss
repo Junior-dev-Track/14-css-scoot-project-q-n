@@ -10,6 +10,9 @@ header {
   .header__hamburgerList {
     display: none;
   }
+  .header__hamburgerList-visible {
+    display: none;
+  }
   nav {
     .header__hamburger {
       display: none;
@@ -194,7 +197,7 @@ header {
 }
 
 .navigation {
-  background-color: #333a44;
+  background-color: $Dark-Grey;
   min-width: 100%;
   z-index: 999;
   nav {
