@@ -34,17 +34,14 @@
   }
 
   .howTo {
-    .infiniteLine {
-      display: none;
-    }
     .container {
       flex-direction: column;
       align-items: center;
       margin: 12.2rem auto 14.5rem auto;
-      hr {
+      .infiniteLine {
         transform: rotate(90deg);
-        left: -21.7%;
-        top: 23%;
+        left: 15.6%;
+        top: -45%;
         min-width: 51.3rem;
       }
       article {

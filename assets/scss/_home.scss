@@ -52,25 +52,21 @@ html {
 
 .howTo {
   position: relative;
-  .infiniteLine {
-    left: -16.5rem;
-    z-index: -1;
-    top: 4rem;
-    position: absolute;
-  }
   .container {
     display: flex;
     justify-content: space-between;
     margin: 16rem auto 20rem auto;
     position: relative;
-    hr {
+    .infiniteLine {
       position: absolute;
-      min-width: 97.4rem;
+      min-width: 350%;
       border: none;
       border-top: 15px solid rgba(229, 236, 244, 1);
-      left: -16.5rem;
+      left: 83rem;
       z-index: -1;
       top: 4rem;
+      transform: rotate(180deg);
+      transform-origin: left;
     }
     article {
       display: flex;
