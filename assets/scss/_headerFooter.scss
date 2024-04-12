@@ -147,3 +147,72 @@ header {
     display: none;
   }
 }
+
+//FOOTER
+.bottomContainer {
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+}
+.bottom {
+  background-color: $Dark-Navy;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.store {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+.store img {
+  width: 18rem;
+  height: 5.6rem;
+  margin-top: 33px;
+}
+#circle {
+  left: 30%;
+  bottom: -30rem;
+  position: absolute;
+}
+
+.media {
+  display: flex;
+  margin-left: auto;
+  width: 100ps;
+}
+.media a i {
+  color: $Yellow;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.media a i:hover {
+  color: $Light-Grey;
+}
+
+.navigation {
+  background-color: #333a44;
+  min-width: 100%;
+  z-index: 999;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 9.6rem;
+    ul {
+      display: flex;
+      li {
+        margin-right: 3.4rem;
+        a:hover {
+          color: $Yellow;
+        }
+        img {
+          margin-right: 2.4rem;
+        }
+      }
+    }
+  }
+}
