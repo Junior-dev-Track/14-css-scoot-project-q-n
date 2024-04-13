@@ -11,9 +11,6 @@
           top: 84%;
           right: -10%;
         }
-        .straightLine {
-          display: none;
-        }
         .smallArrow {
           top: 72%;
           left: -20.4%;
@@ -80,6 +77,9 @@
       }
       .bigArrow {
         left: -27%;
+      }
+      .infiniteLine {
+        display: block;
       }
     }
     #homeGrid__imageTwo {

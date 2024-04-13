@@ -99,7 +99,8 @@
 }
 
 .infiniteLine {
+  position: absolute;
+  min-width: 1000%;
   border: none;
-  border-top: 15px solid rgba(229, 236, 244, 1);
-  min-width: 45%;
+  border-top: 15px solid $Yellow;
 }

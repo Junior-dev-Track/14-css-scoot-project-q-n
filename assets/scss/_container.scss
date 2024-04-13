@@ -17,6 +17,9 @@
     max-width: 37.5rem;
     margin: 0 auto;
   }
+  .infiniteLine {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -27,6 +30,9 @@
   .pageContainer {
     max-width: 76.8rem;
     margin: 0 auto;
+  }
+  .infiniteLine {
+    display: none;
   }
 }
 
