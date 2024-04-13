@@ -151,6 +151,16 @@ header {
   }
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
 //FOOTER
 .bottomContainer {
   max-width: 144rem;
