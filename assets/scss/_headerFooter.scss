@@ -179,15 +179,22 @@ footer {
   align-items: center;
 }
 .store {
+  margin: 12 auto;
   position: relative;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 15rem;
+  margin-top: 15rem;
+  align-items: center;
+  max-height: 32rem;
+  text-align: center;
 }
 .store img {
   width: 18rem;
   height: 5.6rem;
   margin-top: 33px;
 }
+
 #circle {
   left: 30%;
   bottom: -30rem;
@@ -220,6 +227,8 @@ footer {
     min-height: 9.6rem;
     ul {
       display: flex;
+      flex-direction: column;
+      max-height: 43.8rem;
       li {
         margin-right: 3.4rem;
         a:hover {

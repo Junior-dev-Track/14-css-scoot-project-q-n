@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Scoot - About</title>
     <link rel="stylesheet" href="style-about.scss" />
     <link
       rel="stylesheet"
@@ -18,8 +18,32 @@
   </head>
   <body>
     <!-- HEADER  -->
-    <header class="header-visible">
+    <header class="header-visible header__hamburgerList-hidden">
+      <div class="header__hamburgerList"></div>
+      <ul class="header__hamburgerList-visible">
+        <li>
+          <ul>
+            <li>
+              <a class="bodyText" href="./about.html">About</a>
+            </li>
+            <li>
+              <a class="bodyText" href="./location.html">Location</a>
+            </li>
+            <li>
+              <a class="bodyText" href="./careers.html">Careers</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="btn bodyText" href="#">Get Scootin</a>
+        </li>
+      </ul>
       <nav class="container">
+        <div class="header__hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul>
           <li>
             <a href="./index.html"
@@ -27,7 +51,7 @@
             /></a>
           </li>
           <li>
-            <a class="bodyText" href="./about.html"> <p>About</p></a>
+            <a class="bodyText" href="./about.html"><p>About</p></a>
           </li>
           <li>
             <a class="bodyText" href="./location.html"><p>Location</p></a>
@@ -36,7 +60,7 @@
             <a class="bodyText" href="./careers.html"><p>Careers</p></a>
           </li>
         </ul>
-        <a class="btn bodyText" href="#">Get Scootin</a>
+        <a class="btn bodyText btnHeader" href="#">Get Scootin</a>
       </nav>
     </header>
 
@@ -220,69 +244,66 @@
           </div>
         </article>
       </section>
-
-      <!-- FOOTER  -->
-      <footer>
-        <!-- Section Sign In  -->
-        <section class="bottom">
-          <div class="bottomContainer">
-            <div class="container store">
-              <h4 class="hOne">Sign up and Scoot off today</h4>
-              <a href="#"
-                ><img
-                  id="apple"
-                  src="assets/images/footer/AppleStore.png"
-                  alt="AppleStore"
-                />
-              </a>
-              <a href="#"
-                ><img
-                  src="assets/images/footer/GooglePlay.png"
-                  alt="GooglePlay"
-              /></a>
-            </div>
-            <img
-              id="circle"
-              src="assets/images/footer/threecircles.svg"
-              alt="threecircles"
-            />
-          </div>
-        </section>
-
-        <!-- Section Navigation  -->
-        <section class="navigation">
-          <nav class="container">
-            <ul>
-              <li>
-                <a href="./index.html"
-                  ><img src="./assets/images/footer/scootLight.svg" alt="logo"
-                /></a>
-              </li>
-              <li>
-                <a class="bodyText" href="./about.html"> <p>About</p></a>
-              </li>
-              <li>
-                <a class="bodyText" href="./location.html"><p>Location</p></a>
-              </li>
-              <li>
-                <a class="bodyText" href="./careers.html"><p>Careers</p></a>
-              </li>
-            </ul>
-            <div class="media">
-              <a href="#" aria-label="Friend Scoot on Facebook">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a href="#" aria-label="Follow Scoot on Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" aria-label="Follow Scoot on Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </nav>
-        </section>
-      </footer>
     </main>
+    <!-- FOOTER  -->
+    <footer>
+      <!-- Section Sign In  -->
+      <section class="bottom">
+        <div class="bottomContainer">
+          <div class="container store">
+            <h4 class="hOne">Sign up and Scoot off today</h4>
+            <a href="#"
+              ><img
+                id="apple"
+                src="assets/images/footer/AppleStore.png"
+                alt="AppleStore"
+              />
+            </a>
+            <a href="#"
+              ><img src="assets/images/footer/GooglePlay.png" alt="GooglePlay"
+            /></a>
+          </div>
+          <img
+            id="circle"
+            src="assets/images/footer/threecircles.svg"
+            alt="threecircles"
+          />
+        </div>
+      </section>
+
+      <!-- Section Navigation  -->
+      <section class="navigation">
+        <nav class="container">
+          <ul>
+            <li>
+              <a href="./index.html"
+                ><img src="./assets/images/footer/scootLight.svg" alt="logo"
+              /></a>
+            </li>
+            <li>
+              <a class="bodyText" href="./about.html"> <p>About</p></a>
+            </li>
+            <li>
+              <a class="bodyText" href="./location.html"><p>Location</p></a>
+            </li>
+            <li>
+              <a class="bodyText" href="./careers.html"><p>Careers</p></a>
+            </li>
+          </ul>
+          <div class="media">
+            <a href="#" aria-label="Friend Scoot on Facebook">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" aria-label="Follow Scoot on Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Follow Scoot on Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </nav>
+      </section>
+    </footer>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
