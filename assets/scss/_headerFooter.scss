@@ -84,13 +84,14 @@ header {
       min-height: 6.4rem;
       justify-content: center;
       .header__hamburger {
-        border: none;
-        background: transparent;
+        cursor: pointer;
         display: flex;
         flex-direction: column;
-        gap: 0.2rem;
+        gap: 0.24rem;
         position: absolute;
         left: 8%;
+        width: 1.969rem;
+        height: 1.6rem;
         div {
           height: 0.369rem;
           width: 1.969rem;
@@ -141,14 +142,26 @@ header {
   div:nth-child(1) {
     position: absolute;
     transform: rotate(45deg);
+    top: 40%;
   }
   div:nth-child(2) {
     position: absolute;
     transform: rotate(-45deg);
+    top: 40%;
   }
   div:nth-child(3) {
     display: none;
   }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 //FOOTER

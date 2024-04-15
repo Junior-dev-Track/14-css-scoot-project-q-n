@@ -1,9 +1,4 @@
-html {
-  overflow-x: hidden;
-}
-
 .smallArrow,
-.straightLine,
 .bigArrow,
 .threeSmallCircles {
   position: absolute;
@@ -26,13 +21,15 @@ html {
         top: 65%;
         right: -18%;
       }
-      .straightLine {
+      .infiniteLine {
         top: 53.4%;
-        left: -15%;
+        left: 3%;
+        transform: rotate(180deg);
+        transform-origin: left;
       }
       .smallArrow {
         top: 53.4%;
-        right: 10%;
+        right: 11%;
         max-width: 44.7rem;
         max-height: 13.8rem;
       }
@@ -58,9 +55,6 @@ html {
     margin: 16rem auto 20rem auto;
     position: relative;
     .infiniteLine {
-      position: absolute;
-      min-width: 350%;
-      border: none;
       border-top: 15px solid rgba(229, 236, 244, 1);
       left: 83rem;
       z-index: -1;
@@ -127,6 +121,10 @@ html {
       left: -5%;
       min-width: 73.5rem;
     }
+    .infiniteLine {
+      top: 68.15%;
+      left: 29%;
+    }
   }
   #homeGrid__textTwo {
     grid-area: textTwo;
@@ -144,6 +142,12 @@ html {
       transform: scaleX(-1);
       min-width: 73.5rem;
     }
+    .infiniteLine {
+      top: 0.18%;
+      left: 0%;
+      transform: rotate(180deg);
+      transform-origin: left;
+    }
   }
   #homeGrid__textThree {
     grid-area: textThree;
@@ -158,6 +162,10 @@ html {
       top: 18%;
       left: 65%;
       min-width: 73.5rem;
+    }
+    .infiniteLine {
+      top: 18.15%;
+      left: 98%;
     }
   }
 }
