@@ -148,7 +148,7 @@
     "title title"
     "article1 article2"
     "article3 article4";
-  column-gap: 33rem;
+  column-gap: 13rem;
   margin: 15rem auto;
   min-height: 60.8rem;
   text-align: center;
@@ -162,14 +162,14 @@
   }
   .howItWorksA {
     grid-area: article2;
-    max-width: 73rem;
+    max-width: 85rem;
   }
   .safeDiving {
     grid-area: article3;
   }
   .safeDrivingA {
     grid-area: article4;
-    max-width: 73rem;
+    max-width: 85rem;
   }
 }
 
