@@ -3,75 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Location</title>
+    <title>Scoot - Location</title>
     <link rel="stylesheet" href="style-location.scss" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
   </head>
   <body>
-        <!-- HEADER  -->
-        <header class="header-visible">
-          <nav class="container">
-            <ul>
-              <li>
-                <a href="./index.html"
-                  ><img src="./assets/images/header/scootDark.svg" alt="logo"
-                /></a>
-              </li>
-              <li>
-                <a class="bodyText" href="./about.html"> <p>About</p></a>
-              </li>
-              <li>
-                <a class="bodyText" href="./location.html"><p>Location</p></a>
-              </li>
-              <li>
-                <a class="bodyText" href="./careers.html"><p>Careers</p></a>
-              </li>
-            </ul>
-            <a class="btn bodyText" href="#">Get Scootin</a>
-          </nav>
-        </header>
-      
-          <main>
-            <!-- BANNER -->
-            <section class="locationBanner">
-              <div class="darkBackground">
-                <div class="container">
-                  <h1 class="hOne">Locations</h1>
-                  <img
-                    class="threeCircles"
-                    src="./assets/images/shapes/threeSmallCircles.svg"
-                    alt="threeSmallCircles"
-                  />
-                </div>
-              </div>
-            </section>
-             <!-- MAP -->
-             <section class="mapContainer">
-              <img src="assets/images/location/map.png" alt="map of the world" />
-              <p class="places bodyText">New York</p>
-              <p class="places bodyText">London</p>
-              <p class="places bodyText">Yokohama</p>
-              <p class="places bodyText">Jakarta</p>
-             </section>
-             
-    
-    <!-- TEXT SECTION -->
-    <section class="container findCity">
-      <h2 class="hTwo">Your city not listed?</h2>
-      <p class="bodyText">
-        If you’d like to see Scoot in your hometown, be sure to let us know. We
-        track requests and plan launches based on demand. Feel free to message us
-        by clicking the link or messaging us on social.
-      </p>
-      <a class="btn bodyText" href="#">Message Us</a>
-       
-    </section>
-    
-     <!-- FOOTER -->
-     <footer>
+    <!-- HEADER  -->
+    <header class="header-visible header__hamburgerList-hidden">
+      <div class="header__hamburgerList"></div>
+      <ul class="header__hamburgerList-visible">
+        <li>
+          <ul>
+            <li>
+              <a class="bodyText" href="./about.html">About</a>
+            </li>
+            <li>
+              <a class="bodyText" href="./location.html">Location</a>
+            </li>
+            <li>
+              <a class="bodyText" href="./careers.html">Careers</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="btn bodyText" href="#">Get Scootin</a>
+        </li>
+      </ul>
+      <nav class="container">
+        <div class="header__hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><img src="./assets/images/header/scootDark.svg" alt="logo"
+            /></a>
+          </li>
+          <li>
+            <a class="bodyText" href="./about.html"><p>About</p></a>
+          </li>
+          <li>
+            <a class="bodyText" href="./location.html"><p>Location</p></a>
+          </li>
+          <li>
+            <a class="bodyText" href="./careers.html"><p>Careers</p></a>
+          </li>
+        </ul>
+        <a class="btn bodyText btnHeader" href="#">Get Scootin</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- BANNER -->
+      <section class="locationBanner">
+        <div class="darkBackground">
+          <div class="container">
+            <h1 class="hOne">Locations</h1>
+            <img
+              class="threeCircles"
+              src="./assets/images/shapes/threeSmallCircles.svg"
+              alt="threeSmallCircles"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- MAP -->
+      <section class="mapContainer">
+        <img src="assets/images/location/map.png" alt="map of the world" />
+        <p class="places bodyText">New York</p>
+        <p class="places bodyText">London</p>
+        <p class="places bodyText">Yokohama</p>
+        <p class="places bodyText">Jakarta</p>
+      </section>
+
+      <!-- TEXT SECTION -->
+      <section class="container findCity">
+        <h2 class="hTwo">Your city not listed?</h2>
+        <p class="bodyText">
+          If you’d like to see Scoot in your hometown, be sure to let us know.
+          We track requests and plan launches based on demand. Feel free to
+          message us by clicking the link or messaging us on social.
+        </p>
+        <a class="btn bodyText" href="#">Message Us</a>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
       <!-- Section Sign In  -->
       <section class="bottom">
         <div class="bottomContainer">
@@ -85,9 +107,7 @@
               />
             </a>
             <a href="#"
-              ><img
-                src="assets/images/footer/GooglePlay.png"
-                alt="GooglePlay"
+              ><img src="assets/images/footer/GooglePlay.png" alt="GooglePlay"
             /></a>
           </div>
           <img

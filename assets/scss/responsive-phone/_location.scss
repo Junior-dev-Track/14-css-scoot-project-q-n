@@ -1,0 +1,39 @@
+@media only screen and (max-width: 767px) {
+  .locationBanner {
+    text-align: center;
+    .darkBackground {
+      .container {
+        display: flex;
+        justify-content: center;
+        min-height: 20rem;
+        position: relative;
+        img {
+          display: none;
+        }
+        .hOneDiv {
+          margin-bottom: 10rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .findCity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+    grid-row-gap: 2rem;
+    margin-left: 6rem;
+    text-align: center;
+  }
+  .findCity a {
+    margin-left: 6rem;
+  }
+  h2 {
+    align: center;
+  }
+}
