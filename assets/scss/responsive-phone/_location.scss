@@ -19,6 +19,57 @@
       }
     }
   }
+  .places {
+    display: none;
+    visibility: hidden;
+  }
+
+  .pin {
+    background: $Yellow;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+  }
+
+  .pin span {
+    display: none;
+    visibility: hidden;
+  }
+  .newYork {
+    top: 20%;
+    left: 26%;
+  }
+  .london {
+    top: 18%;
+    left: 41%;
+  }
+  .yokohoma {
+    top: 20%;
+    left: 84%;
+  }
+
+  .jakarta {
+    top: 56%;
+    left: 75%;
+  }
+  .placesMobile {
+    display: block;
+    visibility: visible;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 3.6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 31.1rem;
+    height: 7.2rem;
+    background-color: #fcb62b43;
+    justify-content: center;
+    color: $Dark-Navy;
+  }
 
   .findCity {
     display: flex;
@@ -27,13 +78,19 @@
     margin: 0 auto;
     margin-bottom: 12rem;
     grid-row-gap: 2rem;
-    margin-left: 6rem;
     text-align: center;
   }
   .findCity a {
-    margin-left: 6rem;
+    margin-left: 0;
   }
   h2 {
-    align: center;
+    text-align: center;
   }
 }
+// @media only screen and (max-width: 1440px)
+// {
+//     .pin {
+//         display: none;
+//         visibility: hidden;
+//       }
+// }

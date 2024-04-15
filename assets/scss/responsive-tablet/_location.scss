@@ -14,7 +14,10 @@
       }
     }
   }
-
+  .placesMobile {
+    display: none;
+    visibility: hidden;
+  }
   .findCity {
     margin: 12 auto;
     display: flex;
